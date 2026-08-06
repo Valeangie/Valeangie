@@ -36,7 +36,7 @@ Hoy, combino mis años de experiencia en gestión con una formación técnica in
 
 | Proyecto | Stack | El valor del análisis |
 | :--- | :--- | :--- |
-| [📍 Madrid al Descubierto](https://github.com/Valeangie/Proyecto_Madrid_al_descubierto) | Python · SQL · Power BI | **Análisis Urbano.** Una exploración profunda de datos abiertos para entender las dinámicas y tendencias de mi ciudad actual mediante dashboards interactivos. |
+| [📍 Madrid al Descubierto](https://github.com/milenaaguileracastroverde-star/Proyecto_Madrid_al_descubierto.git) | Python · SQL · Power BI | **Análisis Urbano.** Una exploración profunda de datos abiertos para entender las dinámicas y tendencias de mi ciudad actual mediante dashboards interactivos. |
 | [👥 Retención de Talento](https://github.com/Valeangie/People_Analytics_Estrategia_Retencion_Talento) | Python · SQL | **People Analytics.** Aplicación de análisis estratégico y limpieza de datos para resolver desafíos reales de fidelización de talento en las organizaciones. |
 
 ### 🔍 ¡Hay mucho más por descubrir!
