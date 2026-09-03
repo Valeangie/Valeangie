@@ -38,6 +38,7 @@ Hoy, combino mis años de experiencia en gestión con una formación técnica in
 | :--- | :--- | :--- |
 | [📍 Madrid al Descubierto](https://github.com/milenaaguileracastroverde-star/Proyecto_Madrid_al_descubierto.git). | Python · SQL · Power BI | **Análisis Urbano.** Una exploración profunda de datos abiertos para entender las dinámicas y tendencias de mi ciudad actual mediante dashboards interactivos. |
 | [👥 Retención de Talento](https://github.com/Valeangie/People_Analytics_Estrategia_Retencion_Talento) | Python · SQL | **People Analytics.** Aplicación de análisis estratégico y limpieza de datos para resolver desafíos reales de fidelización de talento en las organizaciones. |
+| [🎬 Cine Español (2023-2025)](https://github.com/Valeangie/Proyecto_Cine_Espanol) | Python · SQL · Power BI · Tableau | **Análisis de Taquilla.** Extracción de datos desde PDFs oficiales, limpieza con Pandas y dashboard interactivo para entender el mercado del cine español. |
 
 ### 🔍 ¡Hay mucho más por descubrir!
 Aunque estos son mis proyectos estrella, te invito a navegar por **mis repositorios** donde verás mi evolución constante y otros ejercicios técnicos que demuestran mi pasión por esta nueva etapa profesional. ¡Seguro que encuentras algo que te resulte interesante!
