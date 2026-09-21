@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="CV interactivo de Valeria A. Mora Salcedo — Consultora Salesforce y Analista de Datos Junior en Madrid.">
+<meta name="description" content="CV interactivo de Valeria A. Mora Salcedo — Analista de Datos y Salesforce Junior en Madrid.">
 <title>Valeria Mora Salcedo — CV</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
@@ -140,6 +140,12 @@
     min-height:1.4em;
   }
   .pitch{margin-top:18px; max-width:60ch; color:var(--ink-soft); font-size:1rem;}
+  .track-badge{
+    display:inline-flex; align-items:center; gap:8px; margin-top:16px; padding:9px 16px;
+    border-radius:999px; background:var(--accent-soft); color:var(--accent-ink);
+    font-family:"IBM Plex Mono", monospace; font-size:.78rem; font-weight:600; letter-spacing:.01em;
+    border:1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  }
   .hero-meta{display:flex; flex-wrap:wrap; gap:8px 18px; margin-top:22px; font-size:.85rem; color:var(--ink-soft);}
   .hero-meta span{display:inline-flex; align-items:center; gap:6px;}
   .hero-meta svg{width:14px; height:14px; opacity:.7;}
@@ -213,6 +219,21 @@
   .proj-list li{display:flex; gap:9px; font-size:.9rem; color:var(--ink-soft);}
   .proj-list li::before{content:"→"; color:var(--track-color, var(--accent)); font-weight:600; flex-shrink:0;}
   .proj-list b{color:var(--ink); font-weight:600;}
+
+  .proj-cta{
+    margin-top:24px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;
+    padding:20px 24px; border-radius:var(--radius); background:var(--paper-raised); border:1px solid var(--line);
+    box-shadow:var(--shadow);
+  }
+  .proj-cta p{margin:0; color:var(--ink-soft); font-size:.95rem; max-width:46ch;}
+  .cta-btn{
+    display:inline-flex; align-items:center; gap:8px; padding:11px 22px; border-radius:999px;
+    background:var(--accent); color:var(--paper-raised); font-weight:600; font-size:.88rem;
+    text-decoration:none; white-space:nowrap; transition:opacity .15s, transform .1s;
+  }
+  .cta-btn:hover{opacity:.88;}
+  .cta-btn:active{transform:scale(.97);}
+  :root[data-theme="dark"] .cta-btn{color:#0c1211;}
 
   /* ---------- Educación ---------- */
   .edu-list{display:flex; flex-direction:column;}
@@ -316,10 +337,11 @@
       <div>
         <p class="eyebrow" data-i18n="hero.eyebrow">Madrid, España · Abierta a cualquier modalidad de trabajo</p>
         <h1>Valeria A. Mora Salcedo</h1>
-        <p class="role-line" data-i18n="hero.role">Consultora Salesforce &amp; Analista de Datos Junior</p>
-        <p class="pitch" data-i18n="hero.pitch">Especializada en optimizar procesos de negocio y configurar el ecosistema Salesforce (Admin, App Builder y Marketing Cloud), traduciendo requerimientos en soluciones técnicas mediante automatización declarativa y análisis de datos con SQL y Power BI. Base sólida en gestión del cambio para liderar la adopción digital.</p>
+        <p class="role-line" data-i18n="hero.role">Analista de Datos &amp; Salesforce Junior</p>
+        <p class="pitch" data-i18n="hero.pitch">Máster en Management y Gestión del Cambio, con especialidad en Marketing y Comunicación Digital. Pasé 8 años en el Instituto Mexicano del Seguro Social liderando Sistemas de Información, y hoy complemento esa experiencia con formación en Salesforce y Data Analytics. Me mueve unir visión de negocio y datos: encontrar las herramientas que le simplifican la vida al usuario y reducen el margen de error, tanto en la ejecución como en la toma de decisiones.</p>
+        <div class="track-badge" data-i18n="hero.badge">🌱 +8 años de trayectoria · nueva especialización en Data &amp; Salesforce</div>
         <div class="hero-meta">
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span data-i18n="hero.meta1">8 años en gestión de datos e información</span></span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span data-i18n="hero.meta1">+8 años de trayectoria profesional</span></span>
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg><span data-i18n="hero.meta2">Disponible de inmediato</span></span>
         </div>
         <div class="social-row">
@@ -350,8 +372,8 @@
 <section id="perfil">
   <div class="wrap reveal">
     <div class="section-head"><h2 data-i18n="section.perfil.title">Perfil profesional</h2></div>
-    <p style="max-width:70ch; color:var(--ink-soft); font-size:1.02rem;" data-i18n="perfil.body">
-      Aporto una combinación poco frecuente: administración funcional de Salesforce y análisis estratégico de datos. He liderado migraciones y gobernanza de datos a gran escala en salud pública, mejorado métricas digitales en experiencia de cliente y marketing, y hoy diseño flujos declarativos y paneles de control que convierten datos en decisiones. Proactiva, organizada y autónoma — cómoda tanto en la conversación de negocio como en el detalle técnico.
+<p style="max-width:70ch; color:var(--ink-soft); font-size:1.02rem;" data-i18n="perfil.body">
+      Ocho años al frente de Sistemas de Información en el Instituto Mexicano del Seguro Social me enseñaron a conectar procesos, personas y datos. Ese recorrido, sumado a mi Máster en Management y Gestión del Cambio (especialidad en Marketing y Comunicación Digital), es la base sobre la que ahora construyo mi formación en Salesforce y Data Analytics. Lo que más me motiva es unir la mirada de negocio con el dato concreto: diseñar herramientas que le faciliten el trabajo al usuario y minimicen errores, tanto al ejecutar procesos como al tomar decisiones.
     </p>
   </div>
 </section>
@@ -397,12 +419,12 @@
         <div class="tl-date" data-i18n="exp4.date">SEP 2012 — OCT 2020 · MEXICALI, MÉXICO</div>
         <div class="tl-role" data-i18n="exp4.role">Coordinadora de Sistemas de Información</div>
         <div class="tl-org">Instituto Mexicano del Seguro Social (IMSS)</div>
-        <p class="tl-desc" data-i18n="exp4.desc">Lideré la transformación digital de la división médica, logrando una reducción del <b style="color:var(--ink)">30%</b> en los tiempos de procesamiento de datos e informes administrativos. Supervisé la migración masiva y digitalización de expedientes en 10 unidades médicas, garantizando gobernanza, limpieza (ETL) y calidad estricta del dato médico.</p>
+        <p class="tl-desc" data-i18n="exp4.desc">Participé en la transformación digital de la división médica, contribuyendo a una reducción del <b style="color:var(--ink)">30%</b> en los tiempos de procesamiento de datos e informes administrativos. Apoyé la migración y digitalización de expedientes en 10 unidades médicas, cuidando la gobernanza, limpieza (ETL) y calidad del dato médico.</p>
         <div class="tl-tags">
           <span class="pill" data-i18n="exp4.tag1">Gobernanza de datos</span>
           <span class="pill">ETL</span>
           <span class="pill" data-i18n="exp4.tag3">Migración de sistemas</span>
-          <span class="pill" data-i18n="exp4.tag4">Liderazgo de equipo</span>
+          <span class="pill" data-i18n="exp4.tag4">Trabajo en equipo</span>
         </div>
       </div>
     </div>
@@ -430,6 +452,12 @@
           <li data-i18n="proj2.li2"><span><b>Simulación Marketing Cloud:</b> customer journeys automatizados y campañas segmentadas mediante Email Studio, emulando estrategias de inbound marketing.</span></li>
         </ul>
       </div>
+    </div>
+    <div class="proj-cta">
+      <p data-i18n="proyectos.cta.text">¿Quieres conocer un poco más de mi trabajo y mis proyectos? Tengo un portafolio con análisis más detallados.</p>
+      <a class="cta-btn" href="https://valeangie.github.io/Valeangie/portfolio.html" target="_blank" rel="noopener">
+        <span data-i18n="proyectos.cta.btn">Ver portafolio</span> →
+      </a>
     </div>
   </div>
 </section>
@@ -534,7 +562,7 @@
     <div class="contact-grid">
       <div>
         <div class="section-head" style="margin-bottom:6px;"><h2 data-i18n="contacto.title">Hablemos</h2></div>
-        <p style="color:var(--ink-soft); font-size:.95rem;" data-i18n="contacto.blurb">Encantada de conversar sobre roles de Analista BI/Data o de consultoría funcional Salesforce.</p>
+        <p style="color:var(--ink-soft); font-size:.95rem;" data-i18n="contacto.blurb">Abierta a distintas oportunidades — sobre todo en Análisis de Datos/BI y en el ecosistema Salesforce, donde estoy dando mis primeros pasos.</p>
         <div class="contact-list">
           <a class="contact-row" href="mailto:valeangie.mora@gmail.com">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"></path><path d="M22 6c0-1.1-.9-2-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6z"></path><path d="m22 6-10 7L2 6"></path></svg>
@@ -586,9 +614,10 @@
     'ctrl.print': {es:'Imprimir / Guardar como PDF', en:'Print / Save as PDF'},
     'ctrl.theme': {es:'Cambiar tema', en:'Toggle theme'},
     'hero.eyebrow': {es:'Madrid, España · Abierta a cualquier modalidad de trabajo', en:'Madrid, Spain · Open to any work arrangement'},
-    'hero.role': {es:'Consultora Salesforce &amp; Analista de Datos Junior', en:'Salesforce Consultant &amp; Junior Data Analyst'},
-    'hero.pitch': {es:'Especializada en optimizar procesos de negocio y configurar el ecosistema Salesforce (Admin, App Builder y Marketing Cloud), traduciendo requerimientos en soluciones técnicas mediante automatización declarativa y análisis de datos con SQL y Power BI. Base sólida en gestión del cambio para liderar la adopción digital.', en:'I specialize in optimizing business processes and configuring the Salesforce ecosystem (Admin, App Builder and Marketing Cloud), translating requirements into technical solutions through declarative automation and data analysis with SQL and Power BI. Solid grounding in change management to lead digital adoption.'},
-    'hero.meta1': {es:'8 años en gestión de datos e información', en:'8 years in data and information management'},
+    'hero.role': {es:'Analista de Datos &amp; Salesforce Junior', en:'Junior Data &amp; Salesforce Analyst'},
+    'hero.pitch': {es:'Máster en Management y Gestión del Cambio, con especialidad en Marketing y Comunicación Digital. Pasé 8 años en el Instituto Mexicano del Seguro Social liderando Sistemas de Información, y hoy complemento esa experiencia con formación en Salesforce y Data Analytics. Me mueve unir visión de negocio y datos: encontrar las herramientas que le simplifican la vida al usuario y reducen el margen de error, tanto en la ejecución como en la toma de decisiones.', en:"Master's in Management and Change Leadership, specialized in Marketing and Digital Communication. I spent 8 years at the Mexican Social Security Institute (IMSS) leading Information Systems, and today I round out that experience with training in Salesforce and Data Analytics. What drives me is combining business vision with data: finding the tools that make life simpler for the user and reduce the margin for error, both in execution and in decision-making."},
+    'hero.badge': {es:'🌱 +8 años de trayectoria · nueva especialización en Data &amp; Salesforce', en:'🌱 8+ years of experience · new specialization in Data &amp; Salesforce'},
+    'hero.meta1': {es:'+8 años de trayectoria profesional', en:'8+ years of professional experience'},
     'hero.meta2': {es:'Disponible de inmediato', en:'Immediately available'},
     'social.portfolio': {es:'Portafolio de análisis', en:'Analytics Portfolio'},
     'kpi1': {es:'Especializaciones Salesforce', en:'Salesforce specializations'},
@@ -596,7 +625,7 @@
     'kpi3': {es:'Idiomas de trabajo', en:'Working languages'},
     'kpi4': {es:'Formaciones completadas', en:'Completed trainings'},
     'section.perfil.title': {es:'Perfil profesional', en:'Professional profile'},
-    'perfil.body': {es:'Aporto una combinación poco frecuente: administración funcional de Salesforce y análisis estratégico de datos. He liderado migraciones y gobernanza de datos a gran escala en salud pública, mejorado métricas digitales en experiencia de cliente y marketing, y hoy diseño flujos declarativos y paneles de control que convierten datos en decisiones. Proactiva, organizada y autónoma — cómoda tanto en la conversación de negocio como en el detalle técnico.', en:'I bring an uncommon combination: functional Salesforce administration and strategic data analysis. I have led large-scale data migrations and governance in public healthcare, improved digital metrics in customer experience and marketing, and today I design declarative flows and dashboards that turn data into decisions. Proactive, organized and autonomous — equally comfortable in the business conversation and in the technical detail.'},
+    'perfil.body': {es:'Ocho años al frente de Sistemas de Información en el Instituto Mexicano del Seguro Social me enseñaron a conectar procesos, personas y datos. Ese recorrido, sumado a mi Máster en Management y Gestión del Cambio (especialidad en Marketing y Comunicación Digital), es la base sobre la que ahora construyo mi formación en Salesforce y Data Analytics. Lo que más me motiva es unir la mirada de negocio con el dato concreto: diseñar herramientas que le faciliten el trabajo al usuario y minimicen errores, tanto al ejecutar procesos como al tomar decisiones.', en:'Eight years leading Information Systems at the Mexican Social Security Institute (IMSS) taught me to connect processes, people and data. That path, together with my Master’s in Management and Change Leadership (specialized in Marketing and Digital Communication), is the foundation I’m now building on with training in Salesforce and Data Analytics. What drives me most is bringing together a business mindset with concrete data: designing tools that make work easier for the user and cut down on errors, both in running processes and in making decisions.'},
     'section.experiencia.title': {es:'Experiencia', en:'Experience'},
     'section.experiencia.count': {es:'4 posiciones', en:'4 positions'},
     'exp1.date': {es:'ABR 2025 — AGO 2025 · MADRID', en:'APR 2025 — AUG 2025 · MADRID'},
@@ -614,10 +643,10 @@
     'exp3.tag3': {es:'Evaluación de proyectos', en:'Project evaluation'},
     'exp4.date': {es:'SEP 2012 — OCT 2020 · MEXICALI, MÉXICO', en:'SEP 2012 — OCT 2020 · MEXICALI, MEXICO'},
     'exp4.role': {es:'Coordinadora de Sistemas de Información', en:'Information Systems Coordinator'},
-    'exp4.desc': {es:'Lideré la transformación digital de la división médica, logrando una reducción del <b style="color:var(--ink)">30%</b> en los tiempos de procesamiento de datos e informes administrativos. Supervisé la migración masiva y digitalización de expedientes en 10 unidades médicas, garantizando gobernanza, limpieza (ETL) y calidad estricta del dato médico.', en:'I led the digital transformation of the medical division, achieving a <b style="color:var(--ink)">30%</b> reduction in data-processing and reporting times. I oversaw the mass migration and digitization of records across 10 medical units, ensuring governance, cleansing (ETL) and strict quality of medical data.'},
+    'exp4.desc': {es:'Participé en la transformación digital de la división médica, contribuyendo a una reducción del <b style="color:var(--ink)">30%</b> en los tiempos de procesamiento de datos e informes administrativos. Apoyé la migración y digitalización de expedientes en 10 unidades médicas, cuidando la gobernanza, limpieza (ETL) y calidad del dato médico.', en:'I took part in the digital transformation of the medical division, contributing to a <b style="color:var(--ink)">30%</b> reduction in data-processing and reporting times. I supported the migration and digitization of records across 10 medical units, taking care of governance, cleansing (ETL) and quality of medical data.'},
     'exp4.tag1': {es:'Gobernanza de datos', en:'Data governance'},
     'exp4.tag3': {es:'Migración de sistemas', en:'Systems migration'},
-    'exp4.tag4': {es:'Liderazgo de equipo', en:'Team leadership'},
+    'exp4.tag4': {es:'Trabajo en equipo', en:'Teamwork'},
     'section.proyectos.title': {es:'Proyectos y casos de negocio', en:'Projects &amp; business cases'},
     'section.proyectos.count': {es:'Simulación empresarial', en:'Business simulation'},
     'proj1.li1': {es:'<span><b>Gobernanza y extracción de datos:</b> modelos relacionales desde cero, gestión de bases de datos con SQL para extracción, filtrado y limpieza de datos transaccionales.</span>', en:'<span><b>Data governance &amp; extraction:</b> relational models built from scratch, managing databases with SQL to extract, filter and clean transactional data.</span>'},
@@ -625,6 +654,8 @@
     'proj1.li3': {es:'<span><b>Ingesta automatizada:</b> scripts en Python (Pandas, BeautifulSoup) para web scraping y carga automatizada de datos, reduciendo errores manuales.</span>', en:'<span><b>Automated ingestion:</b> Python scripts (Pandas, BeautifulSoup) for web scraping and automated data loading, reducing manual errors.</span>'},
     'proj2.li1': {es:'<span><b>Modelado y automatización CRM:</b> soluciones declarativas con Flows avanzados y Validation Rules; configuración del modelo de datos y arquitectura de seguridad (roles, perfiles, compartición).</span>', en:'<span><b>CRM modeling &amp; automation:</b> declarative solutions with advanced Flows and Validation Rules; data model configuration and security architecture (roles, profiles, sharing).</span>'},
     'proj2.li2': {es:'<span><b>Simulación Marketing Cloud:</b> customer journeys automatizados y campañas segmentadas mediante Email Studio, emulando estrategias de inbound marketing.</span>', en:'<span><b>Marketing Cloud simulation:</b> automated customer journeys and segmented campaigns via Email Studio, emulating inbound marketing strategies.</span>'},
+    'proyectos.cta.text': {es:'¿Quieres conocer un poco más de mi trabajo y mis proyectos? Tengo un portafolio con análisis más detallados.', en:'Want to see a bit more of my work and projects? I have a portfolio with more in-depth analyses.'},
+    'proyectos.cta.btn': {es:'Ver portafolio', en:'View portfolio'},
     'section.educacion.title': {es:'Educación y certificaciones', en:'Education &amp; training'},
     'edu1.title': {es:'Formación Técnica en Soluciones Salesforce (240h)', en:'Technical Training in Salesforce Solutions (240h)'},
     'edu1.detail': {es:'Especialización en Salesforce Administrator (ADX201), App Builder (DEX403) y Marketing Cloud (MKT101).', en:'Specialization in Salesforce Administrator (ADX201), App Builder (DEX403) and Marketing Cloud (MKT101).'},
@@ -647,7 +678,7 @@
     'lang.en.name': {es:'Inglés', en:'English'},
     'lang.en.level': {es:'Competencia intermedia profesional', en:'Upper-intermediate professional proficiency'},
     'contacto.title': {es:'Hablemos', en:"Let's talk"},
-    'contacto.blurb': {es:'Encantada de conversar sobre roles de Analista BI/Data o de consultoría funcional Salesforce.', en:'Happy to talk about Data/BI Analyst roles or functional Salesforce consulting opportunities.'},
+    'contacto.blurb': {es:'Abierta a distintas oportunidades — sobre todo en Análisis de Datos/BI y en el ecosistema Salesforce, donde estoy dando mis primeros pasos.', en:"Open to a range of opportunities — especially in Data/BI Analysis and the Salesforce ecosystem, where I'm just getting started."},
     'contacto.location': {es:'Madrid, España', en:'Madrid, Spain'},
     'avail.eyebrow': {es:'Estado', en:'Status'},
     'avail.title': {es:'Disponible de inmediato', en:'Immediately available'},
